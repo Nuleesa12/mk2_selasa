@@ -10,11 +10,8 @@
 <body>
 <?php
 $inputText = $_POST["textarea_content"];
-
 $wordCount = str_word_count($inputText);
-
 $letterCount = strlen(preg_replace('/[^a-zA-Z]/','',$inputText));
-
 $reversedText = strrev($inputText);
 
 echo "Input: $inputText\n";
